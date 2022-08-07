@@ -77,3 +77,7 @@ C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\obj\Debug\ASP MVC Demo.
 C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\obj\Debug\ASP MVC Demo.csproj.CopyComplete
 C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\obj\Debug\ASP MVC Demo.dll
 C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\obj\Debug\ASP MVC Demo.pdb
+C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\bin\EntityFramework.dll
+C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\bin\EntityFramework.SqlServer.dll
+C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\bin\EntityFramework.xml
+C:\Users\maxim\Projects\Github\ASP_MVC_DEMO\ASP MVC Demo\bin\EntityFramework.SqlServer.xml

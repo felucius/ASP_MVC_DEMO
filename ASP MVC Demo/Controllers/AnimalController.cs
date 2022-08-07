@@ -18,9 +18,12 @@ namespace ASP_MVC_Demo.Controllers
         /// GET /Animal/Welcome/
         /// </summary>
         /// <returns></returns>
-        public string Welcome(string name, int id = 1)
+        public ActionResult Welcome(string name, int id = 1)
         {
-            return HttpUtility.HtmlEncode("Hello " + name + ", ID is: " + id);
+            ViewBag.Message = "Hello " + name;
+            ViewBag.Id = id;
+
+            return View();
         }
     }
 }
