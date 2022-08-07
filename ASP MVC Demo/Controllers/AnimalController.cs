@@ -9,9 +9,9 @@ namespace ASP_MVC_Demo.Controllers
     public class AnimalController : Controller
     {
         // GET: /Animal
-        public string Index()
+        public ActionResult Index()
         {
-            return "This is my <b>default</b> action";
+            return View();
         }
 
         /// <summary>
