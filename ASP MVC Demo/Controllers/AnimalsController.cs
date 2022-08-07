@@ -42,7 +42,7 @@ namespace ASP_MVC_Demo.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Age,Name,Type,Gender,IsDomesticated,Price")] Animal animal)
+        public ActionResult Create([Bind(Include = "ID,Age,Name,Type,Gender,IsDomesticated,ReleaseDate,Price")] Animal animal)
         {
             if (ModelState.IsValid)
             {
@@ -74,7 +74,7 @@ namespace ASP_MVC_Demo.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Age,Name,Type,Gender,IsDomesticated,Price")] Animal animal)
+        public ActionResult Edit([Bind(Include = "ID,Age,Name,Type,Gender,IsDomesticated,ReleaseDate,Price")] Animal animal)
         {
             if (ModelState.IsValid)
             {

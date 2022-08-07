@@ -134,6 +134,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208071554010_InitialCreate.cs" />
+    <Compile Include="Migrations\202208071554010_InitialCreate.designer.cs">
+      <DependentUpon>202208071554010_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208071643452_AddReleaseDateDateTime.cs" />
+    <Compile Include="Migrations\202208071643452_AddReleaseDateDateTime.designer.cs">
+      <DependentUpon>202208071643452_AddReleaseDateDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\AnimalGender.cs" />
     <Compile Include="Models\AnimalType.cs" />
@@ -199,6 +208,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202208071554010_InitialCreate.resx">
+      <DependentUpon>202208071554010_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208071643452_AddReleaseDateDateTime.resx">
+      <DependentUpon>202208071643452_AddReleaseDateDateTime.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
