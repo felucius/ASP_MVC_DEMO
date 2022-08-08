@@ -11,9 +11,22 @@ namespace ASP_MVC_Demo.Controllers
         private readonly DatabaseContext db = new DatabaseContext();
 
         // GET: Animals
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.Animals.ToList());
+            var animals = from a in db.Animals select a;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                animals = animals.Where(animal => animal.Type.ToString().Contains(searchString));
+            }
+
+            return View(animals);
+        }
+
+        [HttpPost]
+        public string Index(FormCollection fc, string searchString)
+        {
+            return string.Format("<h3> From [HttpPost] Index: {0}</h3>", searchString);
         }
 
         // GET: Animals/Details/5

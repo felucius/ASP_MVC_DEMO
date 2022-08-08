@@ -7,13 +7,13 @@ namespace ASP_MVC_Demo.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class ChangedTypeToAnimalTypeNameIssue : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ChangedTypeToAnimalTypeNameIssue));
         
         string IMigrationMetadata.Id
         {
-            get { return "202208071554010_InitialCreate"; }
+            get { return "202208080950414_ChangedTypeToAnimalTypeNameIssue"; }
         }
         
         string IMigrationMetadata.Source

@@ -7,13 +7,13 @@ namespace ASP_MVC_Demo.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddReleaseDateDateTime : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddReleaseDateDateTime));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202208071643452_AddReleaseDateDateTime"; }
+            get { return "202208080857314_Initial"; }
         }
         
         string IMigrationMetadata.Source

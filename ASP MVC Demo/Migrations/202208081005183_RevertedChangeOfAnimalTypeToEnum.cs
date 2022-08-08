@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddReleaseDateDateTime : DbMigration
+    public partial class RevertedChangeOfAnimalTypeToEnum : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Animals", "ReleaseDate", c => c.DateTime(nullable: false));
+            AddColumn("dbo.Animals", "Type", c => c.Int(nullable: false));
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Animals", "ReleaseDate");
+            DropColumn("dbo.Animals", "Type");
         }
     }
 }
