@@ -14,6 +14,7 @@
     @using (Html.BeginForm("Index", "Animals", FormMethod.Get))
     {
         <p>
+            Genre: @Html.DropDownList("animalAge", "All")
             Title: @Html.TextBox("SearchString") <br />
             <input type="submit" value="Filter" />
         </p>

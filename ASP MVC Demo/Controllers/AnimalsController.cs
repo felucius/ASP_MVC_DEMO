@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
@@ -11,22 +12,30 @@ namespace ASP_MVC_Demo.Controllers
         private readonly DatabaseContext db = new DatabaseContext();
 
         // GET: Animals
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string animalAge, string searchString)
         {
-            var animals = from a in db.Animals select a;
+            var animalList = new List<int>();
+            var animalAgeQuery = from animal in db.Animals 
+                                 orderby animal.Age 
+                                 select animal.Age;
+
+            animalList.AddRange(animalAgeQuery.Distinct());
+            ViewBag.animalAge = new SelectList(animalList);
+
+            var animals = from animal in db.Animals
+                          select animal;
 
             if (!string.IsNullOrEmpty(searchString))
             {
                 animals = animals.Where(animal => animal.Type.ToString().Contains(searchString));
             }
 
-            return View(animals);
-        }
+            if (!string.IsNullOrEmpty(animalAge))
+            {
+                animals = animals.Where(animal => animal.Age.ToString() == animalAge);
+            }
 
-        [HttpPost]
-        public string Index(FormCollection fc, string searchString)
-        {
-            return string.Format("<h3> From [HttpPost] Index: {0}</h3>", searchString);
+            return View(animals);
         }
 
         // GET: Animals/Details/5
