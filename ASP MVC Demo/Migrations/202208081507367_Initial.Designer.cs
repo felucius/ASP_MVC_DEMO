@@ -13,7 +13,7 @@ namespace ASP_MVC_Demo.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202208080857314_Initial"; }
+            get { return "202208081507367_Initial"; }
         }
         
         string IMigrationMetadata.Source

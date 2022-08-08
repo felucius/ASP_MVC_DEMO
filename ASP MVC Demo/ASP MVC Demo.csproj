@@ -134,17 +134,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202208080857314_Initial.cs" />
-    <Compile Include="Migrations\202208080857314_Initial.designer.cs">
-      <DependentUpon>202208080857314_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202208081507367_Initial.cs" />
+    <Compile Include="Migrations\202208081507367_Initial.designer.cs">
+      <DependentUpon>202208081507367_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202208080950414_ChangedTypeToAnimalTypeNameIssue.cs" />
-    <Compile Include="Migrations\202208080950414_ChangedTypeToAnimalTypeNameIssue.designer.cs">
-      <DependentUpon>202208080950414_ChangedTypeToAnimalTypeNameIssue.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202208081005183_RevertedChangeOfAnimalTypeToEnum.cs" />
-    <Compile Include="Migrations\202208081005183_RevertedChangeOfAnimalTypeToEnum.designer.cs">
-      <DependentUpon>202208081005183_RevertedChangeOfAnimalTypeToEnum.cs</DependentUpon>
+    <Compile Include="Migrations\202208081517256_AddedCutenessRatingPropertgy.cs" />
+    <Compile Include="Migrations\202208081517256_AddedCutenessRatingPropertgy.designer.cs">
+      <DependentUpon>202208081517256_AddedCutenessRatingPropertgy.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
@@ -214,14 +210,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202208080857314_Initial.resx">
-      <DependentUpon>202208080857314_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208081507367_Initial.resx">
+      <DependentUpon>202208081507367_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202208080950414_ChangedTypeToAnimalTypeNameIssue.resx">
-      <DependentUpon>202208080950414_ChangedTypeToAnimalTypeNameIssue.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202208081005183_RevertedChangeOfAnimalTypeToEnum.resx">
-      <DependentUpon>202208081005183_RevertedChangeOfAnimalTypeToEnum.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208081517256_AddedCutenessRatingPropertgy.resx">
+      <DependentUpon>202208081517256_AddedCutenessRatingPropertgy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

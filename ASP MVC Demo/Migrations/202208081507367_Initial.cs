@@ -14,6 +14,7 @@
                         ID = c.Int(nullable: false, identity: true),
                         Age = c.Int(nullable: false),
                         Name = c.String(),
+                        Type = c.Int(nullable: false),
                         Gender = c.Int(nullable: false),
                         IsDomesticated = c.Boolean(nullable: false),
                         Price = c.Int(nullable: false),

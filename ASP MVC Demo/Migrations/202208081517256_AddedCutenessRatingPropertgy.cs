@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class RevertedChangeOfAnimalTypeToEnum : DbMigration
+    public partial class AddedCutenessRatingPropertgy : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Animals", "Type", c => c.Int(nullable: false));
+            AddColumn("dbo.Animals", "CutenessRating", c => c.Int(nullable: false));
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Animals", "Type");
+            DropColumn("dbo.Animals", "CutenessRating");
         }
     }
 }

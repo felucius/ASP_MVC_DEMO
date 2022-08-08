@@ -7,13 +7,13 @@ namespace ASP_MVC_Demo.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class ChangedTypeToAnimalTypeNameIssue : IMigrationMetadata
+    public sealed partial class AddedCutenessRatingPropertgy : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ChangedTypeToAnimalTypeNameIssue));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedCutenessRatingPropertgy));
         
         string IMigrationMetadata.Id
         {
-            get { return "202208080950414_ChangedTypeToAnimalTypeNameIssue"; }
+            get { return "202208081517256_AddedCutenessRatingPropertgy"; }
         }
         
         string IMigrationMetadata.Source
