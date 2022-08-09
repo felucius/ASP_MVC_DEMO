@@ -127,7 +127,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AnimalController.cs" />
     <Compile Include="Controllers\AnimalsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DatabaseContext.cs" />
@@ -141,6 +140,14 @@
     <Compile Include="Migrations\202208081517256_AddedCutenessRatingPropertgy.cs" />
     <Compile Include="Migrations\202208081517256_AddedCutenessRatingPropertgy.designer.cs">
       <DependentUpon>202208081517256_AddedCutenessRatingPropertgy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208090927350_AddedDataAnnotationsAnimalClass.cs" />
+    <Compile Include="Migrations\202208090927350_AddedDataAnnotationsAnimalClass.designer.cs">
+      <DependentUpon>202208090927350_AddedDataAnnotationsAnimalClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208090930067_AddedRegularExpressionFieldForNameProperty.cs" />
+    <Compile Include="Migrations\202208090930067_AddedRegularExpressionFieldForNameProperty.designer.cs">
+      <DependentUpon>202208090930067_AddedRegularExpressionFieldForNameProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
@@ -185,8 +192,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Animal\Index.cshtml" />
-    <Content Include="Views\Animal\Welcome.cshtml" />
     <Content Include="Views\Animals\Create.cshtml" />
     <Content Include="Views\Animals\Delete.cshtml" />
     <Content Include="Views\Animals\Details.cshtml" />
@@ -215,6 +220,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208081517256_AddedCutenessRatingPropertgy.resx">
       <DependentUpon>202208081517256_AddedCutenessRatingPropertgy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208090927350_AddedDataAnnotationsAnimalClass.resx">
+      <DependentUpon>202208090927350_AddedDataAnnotationsAnimalClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208090930067_AddedRegularExpressionFieldForNameProperty.resx">
+      <DependentUpon>202208090930067_AddedRegularExpressionFieldForNameProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
